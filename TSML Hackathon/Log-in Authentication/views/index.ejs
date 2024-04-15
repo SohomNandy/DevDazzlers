@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="main">
+        <span>Hello! <%= name %> Welcome to Caring RN! <br> You're now logged in successfully</span>
+        <button>
+            <a href="https://caringrnproduct.netlify.app/">Explore</a>
+        </button>
+    </div>
+</body>
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(52, 52, 52);
+}
+
+.main
+{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    font-size: 1.5rem;
+    background: url('https://www.icegif.com/wp-content/uploads/2023/11/icegif-479.gif');
+    background-repeat: no-repeat;
+    width: 60%;
+    color: white;
+    background-size: cover;
+    margin: auto;
+    margin-top: 10%;
+    flex-direction: column;
+}
+.main>span
+{
+    background: none;
+}
+.main>button
+{
+    padding: 2% 3%;
+    font-size: 1rem;
+    background-color: rgb(62, 60, 60);
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+.main>button>a
+{
+    padding: 2% 3%;
+    font-size: 1rem;
+    background-color: rgb(62, 60, 60);
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+@media screen and (width < 855px) 
+{
+    .main{
+        width: 30%;
+    }
+}
+</style>
+</html>

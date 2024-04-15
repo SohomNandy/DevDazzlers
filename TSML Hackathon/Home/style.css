@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+}
+
+body {
+  font-family: "Trebuchet MS";
+}
+
+#sec1 {
+  /* border: 2px solid red; */
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  flex-direction: column;
+  font-family: "Trebuchet MS";
+}
+
+.sec1cont {
+  /* border: 2px solid blue; */
+  height: 80%;
+  width: 90%;
+  background: url(/bak1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0; */
+  border-radius: 15px;
+  font-family: "Trebuchet MS";
+}
+.navbar {
+  /* border: 2px solid orange; */
+  padding: 1%;
+  display: flex;
+  /* padding: 5px; */
+  /* justify-content: end; */
+  font-family: "Trebuchet MS";
+}
+
+.logo {
+  /* border: 2px solid red; */
+  display: flex;
+}
+.logo > img {
+  height: 10vh;
+  border-radius: 100%;
+}
+
+.navbar > ul {
+  display: flex;
+  /* border: 2px solid greenyellow; */
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS";
+}
+
+.navbar > ul > li {
+  padding: 10px;
+  border-radius: 20px;
+  /* border: 2px solid rgb(180, 221, 199); */
+  margin: 20px;
+  cursor: pointer;
+  list-style: none;
+  font-family: "Trebuchet MS";
+}
+
+.navbar > ul > li:hover {
+  background-color: rgb(81, 192, 101);
+  transition-duration: 1s;
+}
+.navbar > ul > li > a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: rgb(172, 249, 175);
+  display: block;
+  font-family: "Trebuchet MS";
+}
+.navbar > ul > li > a:hover,
+.navbar > ul > li > a:focus {
+  color: whitesmoke;
+}
+
+@keyframes rot 
+{
+  0%
+  {
+    rotate: 0deg;
+  }
+
+  35%
+  {
+    rotate: y 180deg;
+  }
+
+  60%
+  {
+    rotate: z -80deg;
+  }
+  90%
+  {
+    rotate: y -180deg;
+  }
+  100%
+  {
+    rotate: 0deg;
+  }
+}
+
+
+.ai {
+  display: flex;
+  /* border: 2px solid white; */
+  margin-left: 10%;
+  border-radius: 100%;
+  cursor: pointer;
+  /* width: 10vh;
+  height: 10vh; */
+  width: 14vh;
+  height: 16vh;
+  font-family: "Trebuchet MS";
+  animation: rot 3s infinite;
+}
+.ai>a
+{
+  /* border: 2px solid white; */
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.ai:hover {
+  /* border: 3px solid rgb(255, 118, 118); */
+  transition-duration: 1s;
+}
+.ai > a > img {
+  width: 100%;
+  height: auto;
+  /* width: fit-content; */
+  border-radius: 100%;
+}
+
+.icns {
+  display: flex;
+  /* border: 2px solid white; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 15%;
+  font-family: "Trebuchet MS";
+}
+
+.icns > a {
+  color: white;
+  /* border: 2px solid orange; */
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.icns > a:hover {
+  color: rgb(199, 255, 208);
+}
+
+.icns > a > i {
+  font-size: 2rem;
+  margin-left: 5%;
+  /* font-family: "Trebuchet MS"; */
+}
+
+.team {
+  /* border: 2px solid greenyellow; */
+  /* justify-content: center; */
+  display: flex;
+  width: 100%;
+  height: 18%;
+  font-family: "Trebuchet MS";
+}
+
+.team > img {
+  /* height: 100%; */
+  /* z-index: -1; */
+  width: 10%;
+}
+
+.rightgif {
+  /* border: 2px solid blue; */
+  display: flex;
+  /* align-self: flex-end; */
+  justify-content: end;
+  width: 70%;
+  height: 100%;
+  margin-right: 10%;
+  margin-top: -5%;
+}
+
+.right {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: end;
+  margin-top: 8%;
+  /* width: 50%; */
+  /* flex-direction: column; */
+  /* width: fit-content; */
+}
+
+.rightgif > img {
+  border-radius: 3%;
+  width: 50%;
+  height: 20%;
+}
+
+.buttons {
+  /* border: 2px solid red; */
+  padding-left: 12%;
+  /* z-index: 100; */
+  position: relative;
+  margin-top: -10%;
+}
+
+.buttons > button {
+  background: none;
+  padding: 1.2%;
+  border: 2px solid rgb(94, 229, 94);
+  cursor: pointer;
+}
+.buttons > button:hover {
+  background-color: rgb(62, 67, 62);
+  /* border: none; */
+  transition-duration: 1s;
+  /* border: 2px solid black; */
+  border: none;
+}
+
+.buttons > button > a {
+  /* color: black; */
+  color: rgb(199, 248, 205);
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+  font-size: 1rem;
+  /* background-color: greenyellow; */
+  /* padding: 1%; */
+}
+
+.buttons > button > a:hover {
+  color: rgb(160, 252, 160);
+  /* color: black; */
+}
+
+#sec2 {
+  height: 120vh;
+  background-color: rgb(33, 33, 33);
+  color: rgb(94, 194, 94);
+  font-family: "Trebuchet MS";
+}
+
+.heading {
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 1%;
+  padding-top: 2.1%;
+  padding-left: 3%;
+}
+.heading > h1 {
+  font-size: 2rem;
+  font-family: "Trebuchet MS";
+}
+
+.cards {
+  /* border: 2px solid red; */
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS";
+}
+
+.card-1 {
+  display: flex;
+  /* border: 2px solid white; */
+  flex-direction: column;
+  width: 28%;
+  height: max-content;
+  margin: 3%;
+}
+.card-1 > img {
+  width: 100%;
+  height: 50%;
+  border-radius: 3%;
+}
+
+#c-1 {
+  background: url("/bak2.jpeg");
+  background-size: cover;
+  border-radius: 3%;
+  font-family: "Trebuchet MS";
+}
+#c-2 {
+  background: url("/bak2.jpg");
+  background-size: cover;
+  border-radius: 3%;
+  font-family: "Trebuchet MS";
+}
+#c-3 {
+  background: url("/bak3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3%;
+  font-family: "Trebuchet MS";
+}
+
+#c-1span {
+  /* border: 2px solid white; */
+  padding: 4%;
+  color: white;
+  font-size: 1.2rem;
+  /* margin-top: 5%; */
+  font-family: "Trebuchet MS";
+}
+#c-2span {
+  /* border: 2px solid white; */
+  padding: 4%;
+  color: white;
+  font-size: 1.2rem;
+  /* margin-top: 5%; */
+  font-family: "Trebuchet MS";
+}
+
+#sec3 {
+  height: 100vh;
+  background-color: black;
+  font-family: "Trebuchet MS";
+}
+
+.heading2 {
+  color: rgb(71, 187, 71);
+  /* border: 2px solid white; */
+  padding: 2%;
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS";
+}
+
+.about {
+  /* border: 2px solid white; */
+  padding: 1%;
+  /* align-items: center; */
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  font-family: "Trebuchet MS";
+}
+
+.lft {
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+.lft > img {
+  height: 60%;
+  border-radius: 2%;
+}
+.rght {
+  display: flex;
+  /* border: 2px solid white; */
+  width: 90%;
+  color: white;
+  background: url("/bak4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3%;
+}
+.rght > span {
+  /* border: 2px solid orange; */
+  font-size: 1.3rem;
+  display: flex;
+  /* align-items: center; */
+  padding: 8%;
+  font-family: "Trebuchet MS";
+}
+
+#sec4 {
+  background-color: rgb(27, 25, 25);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec4 > img {
+  /* border: 2px solid white; */
+  width: 20%;
+  height: 35vh;
+  border-radius: 100%;
+}
+#sec4 > span {
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2%;
+  /* margin-top: -5%; */
+  color: rgb(110, 209, 110);
+}
+
+#hamburger {
+  /* border: 2px solid red; */
+  height: fit-content;
+  padding: 3%;
+  display: flex;
+  margin-top: 1.6%;
+  /* display: none; */
+  cursor: pointer;
+  font-family: "Trebuchet MS";
+
+}
+#ham {
+  border: none;
+  /* border: 2px solid white; */
+  padding: 60%;
+  display: flex;
+  display: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: none;
+  color: rgb(132, 227, 129);
+  background-color: rgb(59, 59, 59);
+  cursor: pointer;
+  font-family: "Trebuchet MS";
+}
+#cross {
+  border: none;
+  /* border: 2px solid white; */
+  padding: 60%;
+  display: flex;
+  display: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: none;
+  color: rgb(132, 227, 129);
+  background-color: rgb(59, 59, 59);
+  cursor: pointer;
+  font-family: "Trebuchet MS";
+}
+.ham > i, .cross>i{
+  /* padding: 2%; */
+  display: flex;
+  /* font-size: 1.7rem; */
+}
+
+#cross {
+  display: none;
+}
+
+@media screen and (width < 855px) {
+  body
+  {
+    width: auto;
+    font-family: "Trebuchet MS";
+  }
+  .sec1cont {
+    flex-direction: column;
+  }
+
+  .navbar > ul {
+    /* flex-direction: column; */
+    display: none;
+  }
+  #ham {
+    display: flex;
+  }
+
+  .icns
+  {
+    /* border: 2px solid whitesmoke; */
+    flex-direction: column;
+  }
+
+  .ai
+  {
+    /* height: 7vh; */
+    margin-top: 2%;
+    width: auto;
+    height: 10vh;
+  }
+
+  #sec2 {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .cards {
+    /* width: 100%; */
+    /* height: fit-content; */
+    flex-direction: column;
+  }
+  #c-1span, #c-2span
+  {
+    font-size: 1rem;
+  }
+  .card-1 {
+    width: 90%;
+    /* border: 2px solid white; */
+    height: fit-content;
+    /* height: 85vh; */
+  }
+  .sec1cont
+  {
+    position: relative;
+  }
+  .nav-items {
+    /* border: 2px solid white; */
+    z-index: 100;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 12%;
+    background-color: rgb(43, 43, 43);
+    border-radius: 3%;
+  }
+
+  #sec3 {
+    height: fit-content;
+    justify-content: center;
+  }
+  .lft > img {
+    height: 40vh;
+  }
+  .lft {
+    margin-bottom: 1.5%;
+  }
+  .about {
+    /* border: 2px solid white; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+  }
+  #sec4 > img {
+    height: auto;
+  }
+  .rightgif {
+    /* border: 2px solid white; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+  }
+  .rightgif > img {
+    height: 38vh;
+    width: auto;
+  }
+  .team > img {
+    width: 20%;
+  }
+  .buttons
+  {
+    /* border: 2px solid white; */
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    /* align-items: center; */
+  }
+  .buttons>button
+  {
+    padding: 3%;
+    border-radius: 10%;
+  }
+  .rght>span
+  {
+    font-size: 1rem;
+  }
+  #sec4>span
+  {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media screen and (width < 1285px) and (width > 856px) 
+{
+  .navbar > ul > li > a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(172, 249, 175);
+    display: block;
+    /* border: 2px solid red; */
+    width: 160%;
+  }
+  body
+  {
+    width: 76vh;
+  }
+}
